@@ -1,0 +1,179 @@
+{
+  "reservations": [
+    {
+      "client": {
+        "firstname": "Vladislav",
+        "secondname": "Timofeev",
+        "phone": "+380974040018"
+      },
+      "room": {
+        "number": 11,
+        "category": "Standard",
+        "type": "DBL"
+      },
+      "startBooking": "2018-07-23",
+      "endBooking": "2018-07-25",
+      "id": 1
+    },
+    {
+      "client": {
+        "firstname": "Vladislav",
+        "secondname": "Timofeev",
+        "phone": "+380456440018"
+      },
+      "room": {
+        "number": 11,
+        "category": "Standard",
+        "type": "DBL"
+      },
+      "startBooking": "2018-07-23",
+      "endBooking": "2018-07-26",
+      "id": 2
+    },
+    {
+      "client": {
+        "firstname": "Dmytro",
+        "secondname": "Zaharchenko",
+        "phone": "+380666477563"
+      },
+      "room": {
+        "number": 10,
+        "category": "Luxury",
+        "type": "DBL"
+      },
+      "startBooking": "2018-07-30",
+      "endBooking": "2018-07-31",
+      "id": 3
+    },
+    {
+      "client": {
+        "firstname": "Vladislav",
+        "secondname": "Timofeevich",
+        "phone": "+380974040018"
+      },
+      "room": {
+        "number": "21",
+        "category": "Luxury",
+        "type": "SGL"
+      },
+      "startBooking": "2018-07-18",
+      "endBooking": "2018-07-20",
+      "id": 4
+    }
+  ],
+  "rooms": [
+    {
+      "id": 10,
+      "category": "Luxury",
+      "type": "DBL"
+    },
+    {
+      "id": 11,
+      "category": "Standard",
+      "type": "DBL",
+      "reservationList": []
+    },
+    {
+      "id": 12,
+      "category": "Economy",
+      "type": "SGL"
+    },
+    {
+      "id": 13,
+      "category": "Standard",
+      "type": "SGL"
+    },
+    {
+      "id": 14,
+      "category": "Economy",
+      "type": "SGL",
+      "reservationList": []
+    },
+    {
+      "id": 15,
+      "category": "Standard",
+      "type": "SGL",
+      "reservationList": []
+    },
+    {
+      "id": 16,
+      "category": "Economy",
+      "type": "DBL",
+      "reservationList": []
+    },
+    {
+      "id": 17,
+      "category": "Economy",
+      "type": "SGL",
+      "reservationList": []
+    },
+    {
+      "id": 18,
+      "category": "Standard",
+      "type": "DBL",
+      "reservationList": []
+    },
+    {
+      "id": 19,
+      "category": "Economy",
+      "type": "DBL",
+      "reservationList": []
+    },
+    {
+      "id": 20,
+      "category": "Standard",
+      "type": "SGL",
+      "reservationList": []
+    },
+    {
+      "id": 21,
+      "category": "Luxury",
+      "type": "SGL",
+      "reservationList": []
+    }
+  ],
+  "clients": [
+    {
+      "firstname": "Michael",
+      "secondname": "Tyoply",
+      "phone": "+380456440018",
+      "odate": "2018-07-13T07:14:25.459Z",
+      "id": 1
+    },
+    {
+      "firstname": "Vladislav",
+      "secondname": "Timofeev",
+      "phone": "+380974040018",
+      "odate": "2018-07-13T09:23:06.886Z",
+      "id": 2
+    },
+    {
+      "firstname": "Vladislav",
+      "secondname": "Timofeev",
+      "phone": "+380456440018",
+      "odate": "2018-07-13T09:30:17.010Z",
+      "id": 3
+    },
+    {
+      "firstname": "Michael",
+      "secondname": "Tyoply",
+      "phone": "+380666477563",
+      "odate": "2018-07-13T09:56:40.279Z",
+      "id": 4
+    },
+    {
+      "firstname": "Vladislav",
+      "secondname": "Timofeev",
+      "phone": "+380666477563",
+      "odate": "2018-07-13T12:39:55.895Z",
+      "id": 5
+    },
+    {
+      "firstname": "",
+      "secondname": "",
+      "phone": "",
+      "odate": "2018-07-17T08:11:40.727Z",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+ul{
+  margin-top: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: inherit;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.navbar{
+  background-color: #373c8b;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+
+.navbar-brand{
+  color: #fff;
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  margin-bottom: 0 !important;
+}
+
+.navbar-expand{
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.navbar-collapse{
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar-nav{
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-expand .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+}
+
+.nav-link{
+  display: block;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
+.table .thead-dark th {
+  color: #fff;
+  background-color: #212529;
+  border-color: #32383e;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table td, .table th {
+  padding: .75rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.roomsTable{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 3px;
+}
+
+.content{
+
+}
