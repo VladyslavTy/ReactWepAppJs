@@ -1,6 +1,6 @@
 import React from 'react';
 
-class MyTable extends React.Component {
+class MyRoomsTable extends React.Component {
     constructor(){
         super();
         this.state = {
@@ -32,7 +32,7 @@ class MyTable extends React.Component {
                     }
         />
     });
-        return <div className="roomsTable">
+        return <div className="mainTable">
             <table className="table shadow" id="roomsTable">
                 <thead className="thead-dark border border-dark">
                     <th>Number</th>
@@ -64,4 +64,4 @@ const RoomRow = (props) => {
     );
 };
 
-export default MyTable;
+export default MyRoomsTable;

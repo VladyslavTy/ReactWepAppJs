@@ -112,7 +112,7 @@ th {
   background-color: transparent;
 }
 
-.roomsTable{
+.mainTable{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
   display: flex;
   position: relative;
@@ -123,6 +123,17 @@ th {
   padding-top: 3px;
 }
 
-.content{
+.adder{
+  text-align:center;
+  border:none;
+  border-radius: 4px;
+  font:19px Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  color:#ffffff;
+  background:#589c38;
+}
 
+.adder:focus, .adder:active {
+  outline: none;
+ 
 }

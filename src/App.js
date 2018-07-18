@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Router } from 'react-router';
-import MyHeader from "./header";
-import MyTable from "./MyTable";
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router'
+
+import MyHeader from "./Header/header";
+import MyBookingsTable from "./Booking/MyBookingsTable";
 
 class App extends Component {
   render() {
     return (
-        <Router>
-          <MyHeader/>
-        </Router>
+        <div>
+            <header>
+                <MyHeader/>
+            </header>
+            <div>
+                <MyBookingsTable/>
+            </div>
+        </div>
     );
   }
 }
