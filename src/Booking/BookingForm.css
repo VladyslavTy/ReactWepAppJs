@@ -1,0 +1,101 @@
+.booking-container{
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.booking-form{
+    border:  1px solid #dee2e6 !important;
+
+    display: flex;
+    margin-top: 10px;
+    padding-top: 10px;
+    background-color: #c0c0c7;
+    border-radius: 10px;
+
+}
+
+.form-group{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    margin-left:  10px;
+}
+
+.form{
+    box-sizing: border-box;
+
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.custom-select{
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+    background-size: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -moz-appearance: none;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    margin: 0;
+    font-family: inherit;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+input{
+    overflow: visible;
+    margin: 0;
+    font-family: inherit;
+}
+
+select{
+    text-transform: none;
+}
+
+* ::after, ::before {
+    box-sizing: border-box;
+}

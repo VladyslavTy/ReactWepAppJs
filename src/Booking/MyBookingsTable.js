@@ -17,7 +17,8 @@ class MyBookingsTable extends React.Component{
                     let joined = this.state.data.concat(booking);
                     this.setState({
                         data: joined
-                    })
+                    });
+                    console.log(this.state);
                 })
             })
     }
@@ -33,6 +34,14 @@ class MyBookingsTable extends React.Component{
                 }
             />
         });
+
+      /*  deleteBooking = (obj) =>{
+            let id = obj.parentElement.parentElement.querySelector(".bookingNumber").innerHTML;
+            fetch(URL + '/' + id, {
+                method: 'delete'
+            })
+                .then(r => r.json())
+        };*/
 
         return <div className="mainTable">
             <table className="table shadow" id="roomsTable">
@@ -54,7 +63,9 @@ class MyBookingsTable extends React.Component{
     }
 }
 
+
 const BookingRow = (props) => {
+
     return (
         <tr>
             <td>
@@ -74,7 +85,7 @@ const BookingRow = (props) => {
             </td>
             <td>
                 <button type="button" className="btn btn-outline-danger btn-sm col-12" id="deleteBooking"
-                        onClick="deleteBooking(this)">
+                        onClick={deleteBooking(this)}>
                     Delete
                 </button>
             </td>

@@ -16,7 +16,6 @@ import BookingForm from "./Booking/BookingForm";
 class App extends Component {
   render() {
     return (
-
         <div>
             <header>
                 <MyHeader/>
