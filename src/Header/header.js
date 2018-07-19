@@ -1,27 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import MyRoomsTable from "../Room/MyRoomsTable";
+import NavLink from "react-router-dom/es/NavLink";
 
 class MyHeader extends React.Component{
     render(){
         return <div className="navbar navbar-expand">
             <span className="navbar-brand">Hotel</span>
-            <Router><div className="navbar-collapse">
+            <div className="navbar-collapse">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Booking </a>
+                        <NavLink to="/bookings"  className="nav-link">Booking </NavLink>
                     </li>
                     <li className="nav-item">
-
-                        <a className="nav-link" href="#">Rooms</a>
+                        <NavLink to="/rooms" className="nav-link">Rooms</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Clients
-                          </a>
+                        <NavLink to="/clients"  className="nav-link">Clients
+                        </NavLink>
                     </li>
                 </ul>
             </div>
-            </Router>
         </div>
     }
 }

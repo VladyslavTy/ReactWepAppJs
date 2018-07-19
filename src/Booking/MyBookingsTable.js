@@ -1,4 +1,5 @@
 import React from "react";
+import NavLink from "react-router-dom/es/NavLink";
 
 class MyBookingsTable extends React.Component{
     constructor(){
@@ -37,7 +38,7 @@ class MyBookingsTable extends React.Component{
             <table className="table shadow" id="roomsTable">
                 <thead className="thead-dark border border-dark">
                 <th>
-                    <button className="adder" onClick="openCreatingForm()">+</button>
+                    <NavLink to="/bookingform"><button className="adder">+</button></NavLink>
                 </th>
                 <th>Name</th>
                 <th>Room</th>

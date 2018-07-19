@@ -115,9 +115,9 @@ th {
 .mainTable{
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
   display: flex;
-  position: relative;
+  position: absolute;
   width: 100%;
-  min-height: 1px;
+  min-height: 94%;
   padding-right: 15%;
   padding-left: 15%;
   padding-top: 3px;
@@ -137,3 +137,19 @@ th {
   outline: none;
  
 }
+
+.homePage{
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.homepageContent{
+    display: flex;
+}
+
+.imgHome{
+    border: 1px solid #32383e;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
