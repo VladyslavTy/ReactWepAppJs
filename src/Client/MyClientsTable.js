@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ClientRow from './ClientRow';
 
 class MyClientsTable extends React.Component{
     constructor(){
@@ -10,7 +10,8 @@ class MyClientsTable extends React.Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:3001/clients')
+
+        fetch('http://localhost:4000/clients')
             .then(r => r.json())
             .then(clients => {
                 clients.forEach(client=>{
@@ -38,12 +39,14 @@ class MyClientsTable extends React.Component{
         return <div className="mainTable">
             <table className="table shadow" id="roomsTable">
                 <thead className="thead-dark border border-dark">
+                <tr>
                 <th>#</th>
                 <th>Firstname</th>
-                <th>Secondname</th>
+                <th>Lastname</th>
                 <th>Phone</th>
                 <th>Registration time</th>
                 <th></th>
+                </tr>
                 </thead>
                 <tbody id="rooms" className="roomms">
                 {rows}
@@ -52,27 +55,5 @@ class MyClientsTable extends React.Component{
         </div>
     }
 }
-
-const ClientRow = (props) => {
-    return (
-        <tr>
-            <td>
-                {props.data.id}
-            </td>
-            <td>
-                {props.data.firstname}
-            </td>
-            <td>
-                {props.data.secondname}
-            </td>
-            <td>
-                {props.data.phone}
-            </td>
-            <td>
-                {props.data.odate}
-            </td>
-        </tr>
-    );
-};
 
 export default MyClientsTable;

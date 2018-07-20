@@ -1,5 +1,7 @@
 import React from "react";
+import axios from 'axios';
 import NavLink from "react-router-dom/es/NavLink";
+import BookingRow from "./BookingRow";
 
 class MyBookingsTable extends React.Component{
     constructor(){
@@ -9,25 +11,19 @@ class MyBookingsTable extends React.Component{
         }
     }
 
-    componentDidMount(){
-        fetch('http://localhost:3001/reservations')
-            .then(r => r.json())
-            .then(bookings => {
-                bookings.forEach(booking =>{
-                    let joined = this.state.data.concat(booking);
-                    this.setState({
-                        data: joined
-                    });
-                    console.log(this.state);
-                })
-            })
+    componentDidMount() {
+        axios.get('http://localhost:4000/bookings')
+            .then(r => {
+                const data = r.data;
+                this.setState({data})
+            });
     }
 
     render(){
         let rows = this.state.data.map(booking => {
             return <BookingRow
                 key ={
-                    booking.id
+                    booking._id
                 }
                 data = {
                     booking
@@ -63,34 +59,5 @@ class MyBookingsTable extends React.Component{
     }
 }
 
-
-const BookingRow = (props) => {
-
-    return (
-        <tr>
-            <td>
-                {props.data.id}
-            </td>
-            <td>
-                {props.data.client.firstname}
-            </td>
-            <td>
-                {props.data.client.secondname}
-            </td>
-            <td>
-                {props.data.startBooking}
-            </td>
-            <td>
-                {props.data.endBooking}
-            </td>
-            <td>
-                <button type="button" className="btn btn-outline-danger btn-sm col-12" id="deleteBooking"
-                        onClick={deleteBooking(this)}>
-                    Delete
-                </button>
-            </td>
-        </tr>
-    );
-};
 
 export default MyBookingsTable;

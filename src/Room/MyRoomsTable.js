@@ -1,4 +1,5 @@
 import React from 'react';
+import RoomRow from "./RoomRow";
 
 class MyRoomsTable extends React.Component {
     constructor(){
@@ -9,7 +10,7 @@ class MyRoomsTable extends React.Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:3001/rooms')
+        fetch('http://localhost:4000/rooms')
             .then(r => r.json())
             .then(rooms => {
                 rooms.forEach(room=>{
@@ -31,6 +32,7 @@ class MyRoomsTable extends React.Component {
                 room
                     }
         />
+
     });
         return <div className="mainTable">
             <table className="table shadow" id="roomsTable">
@@ -47,21 +49,21 @@ class MyRoomsTable extends React.Component {
 
     }
 }
-
+/*
 const RoomRow = (props) => {
     return (
         <tr>
             <td>
-                {props.data.id}
+                {props.data.number}
             </td>
             <td>
-                {props.data.type}
+                {props.data.size}
             </td>
             <td>
                 {props.data.category}
             </td>
         </tr>
     );
-};
+};*/
 
 export default MyRoomsTable;

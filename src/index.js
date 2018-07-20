@@ -12,3 +12,4 @@ ReactDOM.render(
     document.getElementById('root'));
 
 
+/*| json-server --watch db.json --port 3001*/
