@@ -2,10 +2,6 @@ import React from 'react';
 
 class  RoomRow extends React.Component{
 
-    handleClick(obj) {
-
-        console.log('Click happened ' + obj);
-    }
     render(){
         return (
             <tr>

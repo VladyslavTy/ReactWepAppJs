@@ -14,10 +14,22 @@ class MyBookingsTable extends React.Component{
     componentDidMount() {
         axios.get('http://localhost:4000/bookings')
             .then(r => {
-                const data = r.data;
+                let data = r.data;
                 this.setState({data})
             });
     }
+
+    bookingRowDel(booking){
+        let id = booking._id;
+        axios.delete('http://localhost:4000/bookings' + '/' + booking._id)
+            .then(r => r.json())
+    }
+/*  fetch('http://localhost:4000/bookings' + '/' + id, {
+            method: 'delete',
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        })  */
 
     render(){
         let rows = this.state.data.map(booking => {
@@ -28,16 +40,9 @@ class MyBookingsTable extends React.Component{
                 data = {
                     booking
                 }
+                onDelEvent={this.bookingRowDel.bind(this)}
             />
         });
-
-      /*  deleteBooking = (obj) =>{
-            let id = obj.parentElement.parentElement.querySelector(".bookingNumber").innerHTML;
-            fetch(URL + '/' + id, {
-                method: 'delete'
-            })
-                .then(r => r.json())
-        };*/
 
         return <div className="mainTable">
             <table className="table shadow" id="roomsTable">

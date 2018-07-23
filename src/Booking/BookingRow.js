@@ -2,8 +2,8 @@ import React from 'react';
 
 class BookingRow extends React.Component{
 
-    deleteBooking(event){
-
+    onDelEvent() {
+        this.props.onDelEvent(this.props.data);
     }
 
     render(){
@@ -26,7 +26,7 @@ class BookingRow extends React.Component{
                 </td>
                 <td>
                     <button type="button" className="btn" id="deleteBooking"
-                    >
+                            onClick={this.onDelEvent.bind(this)} >
                         Delete
                     </button>
                 </td>

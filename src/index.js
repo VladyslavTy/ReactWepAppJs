@@ -10,6 +10,3 @@ import BrowserRouter from "react-router-dom/es/BrowserRouter";
 ReactDOM.render(
     (<BrowserRouter><App/></BrowserRouter>),
     document.getElementById('root'));
-
-
-/*| json-server --watch db.json --port 3001*/

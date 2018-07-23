@@ -10,7 +10,6 @@ class MyClientsTable extends React.Component{
     }
 
     componentDidMount(){
-
         fetch('http://localhost:4000/clients')
             .then(r => r.json())
             .then(clients => {
