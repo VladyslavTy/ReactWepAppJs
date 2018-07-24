@@ -20,16 +20,9 @@ class MyBookingsTable extends React.Component{
     }
 
     bookingRowDel(booking){
-        let id = booking._id;
         axios.delete('http://localhost:4000/bookings' + '/' + booking._id)
-            .then(r => r.json())
+            .then(r => r.json());
     }
-/*  fetch('http://localhost:4000/bookings' + '/' + id, {
-            method: 'delete',
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
-        })  */
 
     render(){
         let rows = this.state.data.map(booking => {

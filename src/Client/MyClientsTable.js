@@ -1,5 +1,6 @@
 import React from 'react';
 import ClientRow from './ClientRow';
+import axios from 'axios';
 
 class MyClientsTable extends React.Component{
     constructor(){
@@ -10,16 +11,11 @@ class MyClientsTable extends React.Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:4000/clients')
-            .then(r => r.json())
-            .then(clients => {
-                clients.forEach(client=>{
-                    let joined = this.state.data.concat(client);
-                    this.setState({
-                        data: joined
-                    })
-                })
-            })
+        axios.get('http://localhost:4000/clients')
+            .then(r => {
+                let data = r.data;
+                this.setState({data})
+            });
     }
 
     render(){

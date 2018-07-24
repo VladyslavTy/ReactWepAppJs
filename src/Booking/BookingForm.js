@@ -1,6 +1,7 @@
 import React from "react";
 import "./BookingForm.css"
 import axios from 'axios';
+import * as ReactDOM from "react-dom";
 
 class BookingForm extends React.Component{
 
@@ -22,22 +23,37 @@ class BookingForm extends React.Component{
 
     onSubmit = (e) => {
         e.preventDefault();
-        const { firstname, lastname, phone, number, startbooking, finishbooking } = this.state;
-
-        axios.post('http://localhost:4000/clients', { firstname, lastname, phone })
-            .then(r => r.json());
-        axios.post('http://localhost:4000/bookings', { firstname, lastname, number, startbooking, finishbooking})
-            .then(r => r.json());
-    };
-/*
-    validateForm() {
-        if ((this.validate(firstname, /^[A-Za-zА-Яа-я]+$/) &&
-            this.validate(lastname, /^[A-Za-zА-Яа-я]+$/) &&
-            this.validate(phone, /\d{12}/) &&
-            this.validate(number, /\d/))) {
-            this.onSubmit();
+        if (this.validateForm()) {
+            const { firstname, lastname, phone, number, startbooking, finishbooking } = this.state;
+            axios.post('http://localhost:4000/bookings', { firstname, lastname, number, startbooking, finishbooking})
+                .then(r => r.json());
+            axios.post('http://localhost:4000/clients', { firstname, lastname, phone })
+                .then(r => r.json());
         }
-    }*/
+        else {
+            console.log("Validate problem, bro");
+        }
+
+    };
+
+    validateForm() {
+        const clientName = ReactDOM.findDOMNode(this._clientName);
+        const clientLName = ReactDOM.findDOMNode(this._clientLName);
+        const clientPhone = ReactDOM.findDOMNode(this._clientPhone);
+        const roomNumber = ReactDOM.findDOMNode(this._roomNumber);
+        const bookingStartDate = ReactDOM.findDOMNode(this._bookingStartDate);
+        const bookingFinishDate = ReactDOM.findDOMNode(this._bookingFinishDate);
+        let allow = false;
+        if(this.validate(clientName, /^[A-Za-zА-Яа-я]+$/) &&
+            this.validate(clientLName, /^[A-Za-zА-Яа-я]+$/) &&
+            this.validate(clientPhone, /\d{12}/) &&
+            this.validate(roomNumber, /\d/) &&
+            this.validate(bookingStartDate,/\d{1}/) &&
+            this.validate(bookingFinishDate,/\d{1}/)){
+            allow = true;
+        }
+        return allow;
+    }
 
     validate(id, condition) {
         return (id.value.match(condition)) ? this.successMessage(id) : this.errorMessage(id);
@@ -61,21 +77,22 @@ class BookingForm extends React.Component{
             <div className="booking-container">
                 <div className="booking-form border">
                     <form className="form" onSubmit={this.onSubmit}>
+
                         <div className="form-row">
                             <div className="form-group">
                                 <label>First name</label>
                                 <input type="text" className="form-control" name="firstname" placeholder="First name"
-                                     id="firstname" value={firstname} onChange={this.onChange}/>
+                                     ref={(node) => { this._clientName = node}} value={firstname} onChange={this.onChange}/>
                             </div>
                             <div className="form-group">
                                 <label>Last name</label>
                                 <input type="text" className="form-control" name="lastname" placeholder="Last name"
-                                       id="lastname" value={lastname} onChange={this.onChange}/>
+                                       ref={(node) => { this._clientLName = node}} value={lastname} onChange={this.onChange}/>
                             </div>
                             <div className="form-group">
                                 <label>Phone</label>
                                 <input type="text" className="form-control" name="phone" placeholder="Phone"
-                                       id="phone" value={phone} onChange={this.onChange}/>
+                                       ref={(node) => { this._clientPhone = node}} value={phone} onChange={this.onChange}/>
                             </div>
                         </div>
 
@@ -99,7 +116,7 @@ class BookingForm extends React.Component{
 
                             <div className="form-group">
                                 <label>Room</label>
-                                <select className="custom-select" id="number" name="number" value={number}  onChange={this.onChange}>
+                                <select className="custom-select" ref={(node) => { this._roomNumber = node}} name="number" value={number}  onChange={this.onChange}>
                                     <option value="10">10</option>
                                     <option value="11">11</option>
                                     <option value="12">12</option>
@@ -122,19 +139,20 @@ class BookingForm extends React.Component{
 
                         <div className="form-row">
                             <div className="form-group">
-                                <input type="date" className="form-control" id="startBooking"
+                                <input type="date" className="form-control" ref={(node) => { this._bookingStartDate = node}}
                                        name="startbooking" value={startbooking}  onChange={this.onChange} />
                             </div>
                             <div className="form-group">
-                                <input type="date" className="form-control" id="finishBooking"
+                                <input type="date" className="form-control" ref={(node) => { this._bookingFinishDate = node}}
                                        name="finishbooking"  value={finishbooking}  onChange={this.onChange}/>
                             </div>
                             <div className="form-group">
-                                <button type="submit"
-                                        className="btn btn-success" id="addButton">Add
-                                </button>
+                               <button type="submit" className="btn btn-success" id="addButton">
+                                   Add
+                               </button>
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>

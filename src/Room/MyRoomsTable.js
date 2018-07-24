@@ -1,5 +1,6 @@
 import React from 'react';
 import RoomRow from "./RoomRow";
+import axios from 'axios';
 
 class MyRoomsTable extends React.Component {
     constructor(){
@@ -10,16 +11,11 @@ class MyRoomsTable extends React.Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:4000/rooms')
-            .then(r => r.json())
-            .then(rooms => {
-                rooms.forEach(room=>{
-                    let joined = this.state.data.concat(room);
-                    this.setState({
-                        data: joined
-                    })
-                })
-            })
+        axios.get('http://localhost:4000/rooms')
+            .then(r => {
+                let data = r.data;
+                this.setState({data})
+            });
     }
 
     render() {

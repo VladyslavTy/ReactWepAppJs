@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import {
     Route,
-    NavLink,
-    HashRouter
 } from "react-router-dom";
 
 import MyHeader from "./Header/header";
