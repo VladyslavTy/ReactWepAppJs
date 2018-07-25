@@ -1,7 +1,6 @@
 import React from "react";
 import axios from 'axios';
 import NavLink from "react-router-dom/es/NavLink";
-import BookingRow from "./BookingRow";
 
 class MyBookingsTable extends React.Component{
     constructor(){
@@ -20,17 +19,17 @@ class MyBookingsTable extends React.Component{
     }
 
     bookingRowDel(booking){
-        this.remove(booking._id);
+
         axios.delete('http://localhost:4000/bookings' + '/' + booking._id);
-
-
     }
 
+/*
     remove(key) {
-        let fdata = [...this.state.data];
+        let fdata = this.state.data;
         fdata.splice(key, 1);
         this.setState({fdata});
     };
+*/
 
 
     render(){
@@ -66,5 +65,36 @@ class MyBookingsTable extends React.Component{
     }
 }
 
+const BookingRow = (props) =>{
+
+    function onDelEvent() {
+        props.onDelEvent(props.data);
+    }
+        return (
+            <tr>
+                <td>
+                    {props.data.id}
+                </td>
+                <td>
+                    {props.data.firstname + ' ' + props.data.lastname}
+                </td>
+                <td>
+                    {props.data.number}
+                </td>
+                <td>
+                    {props.data.startbooking}
+                </td>
+                <td>
+                    {props.data.finishbooking}
+                </td>
+                <td>
+                    <button type="button" className="btn" id="deleteBooking"
+                            onClick={onDelEvent.bind(this)} >
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        );
+};
 
 export default MyBookingsTable;

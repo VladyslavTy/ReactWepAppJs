@@ -1,5 +1,5 @@
 import React from 'react';
-import RoomRow from "./RoomRow";
+/*import RoomRow from "./RoomRow";*/
 import axios from 'axios';
 
 class MyRoomsTable extends React.Component {
@@ -20,16 +20,9 @@ class MyRoomsTable extends React.Component {
 
     render() {
         let rows = this.state.data.map(room => {
-        return <RoomRow
-            key ={
-                room.id
-    }
-            data = {
-                room
-                    }
-        />
-
+        return <RoomRow key ={room.id} data = {room} />
     });
+
         return <div className="mainTable">
             <table className="table shadow" id="roomsTable">
                 <thead className="thead-dark border border-dark">
@@ -42,10 +35,9 @@ class MyRoomsTable extends React.Component {
                 </tbody>
             </table>
         </div>
-
     }
 }
-/*
+
 const RoomRow = (props) => {
     return (
         <tr>
@@ -60,6 +52,6 @@ const RoomRow = (props) => {
             </td>
         </tr>
     );
-};*/
+};
 
 export default MyRoomsTable;

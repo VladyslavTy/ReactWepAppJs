@@ -35,7 +35,7 @@ class UpdateClientForm extends React.Component{
     render(){
         return <div className="updateClientForm">
             <Form horizontal onSubmit={this.updateInfo} >
-                <FormGroup controlId="formInlineName" className="form-group">
+                <FormGroup controlId="formInlineName" >
                     <ControlLabel>First name</ControlLabel>{' '}
                     <FormControl type="text" placeholder={`${this.state.firstname}`} onChange={this.onChange} name="firstname"/>
 

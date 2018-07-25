@@ -1,6 +1,6 @@
 import React from 'react';
-import ClientRow from './ClientRow';
 import axios from 'axios';
+import Link from "react-router-dom/es/Link";
 
 
 class MyClientsTable extends React.Component{
@@ -51,6 +51,34 @@ class MyClientsTable extends React.Component{
             </table>
         </div>
     }
+}
+
+const ClientRow = (props) => {
+        return (
+            <tr>
+                <td>
+                    {props.data.id}
+                </td>
+                <td>
+                    {props.data.firstname}
+                </td>
+                <td>
+                    {props.data.lastname}
+                </td>
+                <td>
+                    {props.data.phone}
+                </td>
+                <td>
+                    {props.data.odate}
+                </td>
+                <td>
+                    <Link to={`/updateclient/${props.data._id}`}>
+                        update
+                    </Link>
+                </td>
+            </tr>
+        );
+
 }
 
 export default MyClientsTable;
