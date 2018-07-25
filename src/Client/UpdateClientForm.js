@@ -28,8 +28,7 @@ class UpdateClientForm extends React.Component{
 
     updateInfo = (e) => {
         e.preventDefault();
-        axios.patch(`http://localhost:4000/clients/${this.props.match.params.id}`,this.state)
-            .then(r => r.json())
+        axios.patch(`http://localhost:4000/clients/${this.props.match.params.id}`,this.state);
     };
 
     render(){
@@ -37,18 +36,17 @@ class UpdateClientForm extends React.Component{
             <Form horizontal onSubmit={this.updateInfo} >
                 <FormGroup controlId="formInlineName" >
                     <ControlLabel>First name</ControlLabel>{' '}
-                    <FormControl type="text" placeholder={`${this.state.firstname}`} onChange={this.onChange} name="firstname"/>
-
+                    <FormControl type="text" value={`${this.state.firstname}`} onChange={this.onChange} name="firstname"/>
                 </FormGroup>
                 <FormGroup controlId="formInlineName" className="form-group">
                     <ControlLabel>Last name</ControlLabel>{' '}
-                    <FormControl type="text" placeholder={`${this.state.lastname}`} onChange={this.onChange} name="lastname" >
+                    <FormControl type="text" value={`${this.state.lastname}`} onChange={this.onChange} name="lastname" >
 
                     </FormControl>
                 </FormGroup>
                 <FormGroup controlId="formInlineName" className="form-group">
                     <ControlLabel>Phone</ControlLabel>{' '}
-                    <FormControl type="text" placeholder={`${this.state.phone}`} onChange={this.onChange} name="phone"/>
+                    <FormControl type="text" value={`${this.state.phone}`} onChange={this.onChange} name="phone"/>
                 </FormGroup>
                 <FormGroup controlId="formInlineName" className="form-group">
                     <Button type="submit" bsStyle="success">Update</Button>
