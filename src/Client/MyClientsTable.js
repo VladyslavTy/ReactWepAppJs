@@ -2,6 +2,7 @@ import React from 'react';
 import ClientRow from './ClientRow';
 import axios from 'axios';
 
+
 class MyClientsTable extends React.Component{
     constructor(){
         super();
@@ -19,7 +20,6 @@ class MyClientsTable extends React.Component{
     }
 
     render(){
-
         let rows = this.state.data.map(client => {
             return <ClientRow
                 key ={
@@ -28,6 +28,7 @@ class MyClientsTable extends React.Component{
                 data = {
                     client
                 }
+
             />
         });
 
@@ -40,7 +41,8 @@ class MyClientsTable extends React.Component{
                 <th>Lastname</th>
                 <th>Phone</th>
                 <th>Registration time</th>
-                <th></th>
+                <th>
+                </th>
                 </tr>
                 </thead>
                 <tbody id="rooms" className="roomms">

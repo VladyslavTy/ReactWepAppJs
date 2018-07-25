@@ -20,9 +20,18 @@ class MyBookingsTable extends React.Component{
     }
 
     bookingRowDel(booking){
-        axios.delete('http://localhost:4000/bookings' + '/' + booking._id)
-            .then(r => r.json());
+        this.remove(booking._id);
+        axios.delete('http://localhost:4000/bookings' + '/' + booking._id);
+
+
     }
+
+    remove(key) {
+        let fdata = [...this.state.data];
+        fdata.splice(key, 1);
+        this.setState({fdata});
+    };
+
 
     render(){
         let rows = this.state.data.map(booking => {

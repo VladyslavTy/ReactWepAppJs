@@ -22,18 +22,15 @@ class BookingForm extends React.Component{
     };
 
     onSubmit = (e) => {
+        const { firstname, lastname, phone, number, startbooking, finishbooking } = this.state;
         e.preventDefault();
         if (this.validateForm()) {
-            const { firstname, lastname, phone, number, startbooking, finishbooking } = this.state;
-            axios.post('http://localhost:4000/bookings', { firstname, lastname, number, startbooking, finishbooking})
-                .then(r => r.json());
-            axios.post('http://localhost:4000/clients', { firstname, lastname, phone })
-                .then(r => r.json());
+            axios.post('http://localhost:4000/bookings', { firstname, lastname, number, startbooking, finishbooking});
+            axios.post('http://localhost:4000/clients', { firstname, lastname, phone });
         }
         else {
             console.log("Validate problem, bro");
         }
-
     };
 
     validateForm() {
@@ -147,12 +144,9 @@ class BookingForm extends React.Component{
                                        name="finishbooking"  value={finishbooking}  onChange={this.onChange}/>
                             </div>
                             <div className="form-group">
-                               <button type="submit" className="btn btn-success" id="addButton">
-                                   Add
-                               </button>
+                                <button type="submit" className="btn btn-success" id="addButton"> Add </button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>
