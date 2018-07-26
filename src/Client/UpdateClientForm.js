@@ -1,6 +1,8 @@
 import React from  'react';
 import {Button, ControlLabel, Form, FormControl, FormGroup} from "react-bootstrap";
 import './UpdateClientForm.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 import axios from "axios/index";
 
 class UpdateClientForm extends React.Component{
@@ -31,8 +33,15 @@ class UpdateClientForm extends React.Component{
         axios.patch(`http://localhost:4000/clients/${this.props.match.params.id}`,this.state);
     };
 
+    createSuccessNotification = () => {
+        return NotificationManager.success('Update successful', 'Success!');
+    };
+
+
     render(){
-        return <div className="updateClientForm">
+
+        return <div>
+        <div className="updateClientForm">
             <Form horizontal onSubmit={this.updateInfo} >
                 <FormGroup controlId="formInlineName" >
                     <ControlLabel>First name</ControlLabel>{' '}
@@ -49,9 +58,11 @@ class UpdateClientForm extends React.Component{
                     <FormControl type="text" value={`${this.state.phone}`} onChange={this.onChange} name="phone"/>
                 </FormGroup>
                 <FormGroup controlId="formInlineName" className="form-group">
-                    <Button type="submit" bsStyle="success">Update</Button>
+                    <Button type="submit" bsStyle="success" onClick={this.createSuccessNotification}>Update</Button>
                 </FormGroup>
             </Form>
+        </div>
+            <NotificationContainer/>
         </div>
     }
 }
