@@ -7,8 +7,8 @@ import HomePage from "./Home/HomePage";
 import MyClientsTable from "./Client/MyClientsTable";
 import MyBookingsTable from "./Booking/MyBookingsTable";
 import MyRoomsTable from "./Room/MyRoomsTable";
-import BookingForm from "./Booking/BookingForm";
 import UpdateClientForm from "./Client/UpdateClientForm";
+import BookingForm from "./Booking/BookingForm";
 
 class App extends Component {
   render() {

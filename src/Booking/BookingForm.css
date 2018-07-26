@@ -8,17 +8,14 @@
     border:  1px solid #dee2e6 !important;
 
     display: flex;
-    margin-top: 10px;
-    padding-top: 10px;
+
     background-color: #c0c0c7;
     border-radius: 10px;
 
 }
 
 .form-group{
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-bottom: 5px;
+
 }
 
 .form-row{

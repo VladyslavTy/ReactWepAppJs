@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de2e7bc0-b4c4-4f2f-a21d-9eee6b4eeefa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Booking/NewBookingForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client/UpdateClientForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/UpdateClientForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Booking/BookingForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking/BookingForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Booking/BookingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking/BookingForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Booking/MyBookingsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking/MyBookingsTable.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,41 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyClientsTable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Client/MyClientsTable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BookingRow.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Booking/BookingRow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
+            <state relative-caret-position="596">
               <caret line="33" column="10" selection-start-line="4" selection-start-column="3" selection-end-line="33" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyRoomsTable.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Room/MyRoomsTable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyBookingsTable.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyBookingsTable.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Booking/MyBookingsTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="460">
+              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -62,40 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientRow.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Client/ClientRow.js">
+      <file leaf-file-name="BookingForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="32" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="413">
+              <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateClientForm.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Client/UpdateClientForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#UpdateClientForm#0" />
-                <element signature="n#!!block;n#componentDidMount#0;n#UpdateClientForm#0" />
-                <element signature="e#732#862#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#713#797#0" />
+                <element signature="e#1245#1261#0" />
+                <element signature="n#!!block;n#validateForm#0;n#NewBookingForm#0" />
+                <element signature="n#!!block;n#validate#0;n#NewBookingForm#0" />
+                <element signature="n#!!block;n#errorMessage#0;n#NewBookingForm#0" />
+                <element signature="n#!!block;n#successMessage#0;n#NewBookingForm#0" />
+                <element signature="e#2361#2427#0" />
+                <element signature="n#!!block;n#render#0;n#NewBookingForm#0" />
               </folding>
             </state>
           </provider>
@@ -104,32 +67,76 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="368">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="NewBookingForm.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Booking/NewBookingForm.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="433">
+              <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookingForm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.js">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="2806">
+              <caret line="155" selection-start-line="155" selection-end-line="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#BookingForm#0" />
-                <element signature="e#424#491#0" />
-                <element signature="n#!!block;n#validateForm#0;n#BookingForm#0" />
-                <element signature="n#!!block;n#successMessage#0;n#BookingForm#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateClientForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client/UpdateClientForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="51" />
+              <folding>
+                <element signature="n#!!block;n#constructor#0;n#UpdateClientForm#0" />
+                <element signature="n#!!block;n#componentDidMount#0;n#UpdateClientForm#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookingForm.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-15">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+              <folding>
+                <element signature="e#856#1386#0" />
+                <element signature="e#957#1123#1" expanded="true" />
+                <element signature="e#1401#1912#0" />
               </folding>
             </state>
           </provider>
@@ -140,8 +147,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -155,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/db.json" />
         <option value="$PROJECT_DIR$/src/Client.js" />
         <option value="$PROJECT_DIR$/src/MyTable.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/header.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/src/Client/MyRoomsTable.js" />
@@ -167,17 +173,21 @@
         <option value="$PROJECT_DIR$/src/Room/RoomRow.js" />
         <option value="$PROJECT_DIR$/src/Booking/BookingRow.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/Booking/BookingForm.css" />
-        <option value="$PROJECT_DIR$/src/Booking/BookingForm.js" />
         <option value="$PROJECT_DIR$/src/Client/UpdateClientForm.css" />
         <option value="$PROJECT_DIR$/src/Client/ClientRow.js" />
         <option value="$PROJECT_DIR$/src/Client/MyClientsTable.js" />
         <option value="$PROJECT_DIR$/src/Room/MyRoomsTable.js" />
-        <option value="$PROJECT_DIR$/src/Booking/MyBookingsTable.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Client/UpdateClientForm.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/Booking/BookingForm.css" />
+        <option value="$PROJECT_DIR$/src/Booking/FormErrors.js" />
+        <option value="$PROJECT_DIR$/src/Booking/NewBookingForm.css" />
+        <option value="$PROJECT_DIR$/src/Booking/NewBookingForm.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Booking/BookingForm.js" />
+        <option value="$PROJECT_DIR$/src/Booking/MyBookingsTable.js" />
       </list>
     </option>
   </component>
@@ -198,10 +208,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1337" />
-    <option name="height" value="1062" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1335" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -222,6 +232,11 @@
             <path>
               <item name="reacthotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="reacthotel" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reacthotel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reacthotel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,24 +250,6 @@
               <item name="reacthotel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reacthotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reacthotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reacthotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reacthotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reacthotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reacthotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Room" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,11 +267,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Booking" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Home" />
       <recent name="$PROJECT_DIR$/src/Room" />
-      <recent name="$PROJECT_DIR$/src/Client" />
-      <recent name="$PROJECT_DIR$/src/Header" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,12 +304,12 @@
       <workItem from="1532326766782" duration="24276000" />
       <workItem from="1532413155035" duration="26153000" />
       <workItem from="1532499717670" duration="16644000" />
-      <workItem from="1532585664773" duration="2641000" />
+      <workItem from="1532585664773" duration="22188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138664000" />
+    <option name="totallyTimeSpent" value="158211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,7 +321,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1337" height="1062" extended-state="6" />
+    <frame x="65" y="-4" width="1335" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -375,30 +372,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Client/MyClientsTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="13" selection-start-line="11" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Booking/MyBookingsTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/hotel.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -545,27 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1018">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Header/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -580,31 +536,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client/UpdateClientForm.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Room/RoomRow.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#BookingForm#0" />
-            <element signature="e#424#491#0" />
-            <element signature="n#!!block;n#validateForm#0;n#BookingForm#0" />
-            <element signature="n#!!block;n#successMessage#0;n#BookingForm#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,10 +563,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Booking/BookingRow.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="10" selection-start-line="4" selection-start-column="3" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="253">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -642,49 +577,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Booking/MyBookingsTable.js">
+    <entry file="file://$PROJECT_DIR$/src/Client/UpdateClientForm.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="276">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/Booking/BookingRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="596">
+          <caret line="33" column="10" selection-start-line="4" selection-start-column="3" selection-end-line="33" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="2806">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Booking/FormErrors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Client/UpdateClientForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="51" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#UpdateClientForm#0" />
             <element signature="n#!!block;n#componentDidMount#0;n#UpdateClientForm#0" />
-            <element signature="e#732#862#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#713#797#0" />
+            <element signature="e#1245#1261#0" />
+            <element signature="n#!!block;n#validateForm#0;n#NewBookingForm#0" />
+            <element signature="n#!!block;n#validate#0;n#NewBookingForm#0" />
+            <element signature="n#!!block;n#errorMessage#0;n#NewBookingForm#0" />
+            <element signature="n#!!block;n#successMessage#0;n#NewBookingForm#0" />
+            <element signature="e#2361#2427#0" />
+            <element signature="n#!!block;n#render#0;n#NewBookingForm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Booking/NewBookingForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#856#1386#0" />
+            <element signature="e#957#1123#1" expanded="true" />
+            <element signature="e#1401#1912#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Booking/BookingForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#713#797#0" />
+            <element signature="e#1245#1261#0" />
+            <element signature="n#!!block;n#validateForm#0;n#NewBookingForm#0" />
+            <element signature="n#!!block;n#validate#0;n#NewBookingForm#0" />
+            <element signature="n#!!block;n#errorMessage#0;n#NewBookingForm#0" />
+            <element signature="n#!!block;n#successMessage#0;n#NewBookingForm#0" />
+            <element signature="e#2361#2427#0" />
+            <element signature="n#!!block;n#render#0;n#NewBookingForm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Booking/MyBookingsTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,46 @@
+.newClientForm{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10px;
+    background-color: rgba(27,44,78,0.25);
+    border: 1px solid rgba(11,14,51,0.91);
+    border-radius: 10px;
+}
+
+.roomCharacteristics{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control{
+    margin-bottom: 0;
+}
+
+.roomSize, .roomCategory, .roomNumber{
+
+}
+
+.roomSize{
+    flex-grow: 1;
+}
+
+.roomCategory{
+    flex-grow: 3;
+}
+
+.roomNumber {
+ flex-grow: 2;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+.lastnameValidField, .firstnameValidField, .phoneValidField{
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 13px;
+    color: red;
+}
+
+

@@ -23,15 +23,16 @@ class MyBookingsTable extends React.Component{
         axios.delete('http://localhost:4000/bookings' + '/' + booking._id);
 
     }
-/*
 
     remove(key) {
         let fdata = this.state.data;
+        fdata.find(function (key) {
+            
+        })
         delete fdata.id(key);
         this.setState({fdata});
     };
 
-*/
 
     render(){
         let rows = this.state.data.map(booking => {
