@@ -6,12 +6,11 @@
 
 .booking-form{
     border:  1px solid #dee2e6 !important;
-
     display: flex;
-
+    margin-top: 10px;
+    padding-top: 10px;
     background-color: #c0c0c7;
     border-radius: 10px;
-
 }
 
 .form-group{

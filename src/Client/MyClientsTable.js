@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Link from "react-router-dom/es/Link";
+import {Button} from "react-bootstrap";
 
 
 class MyClientsTable extends React.Component{
@@ -72,9 +73,12 @@ const ClientRow = (props) => {
                     {props.data.odate}
                 </td>
                 <td>
-                    <Link to={`/updateclient/${props.data._id}`}>
+                    <Button bsStyle="info" className="updateButton">
+                        <Link to={`/updateclient/${props.data._id}`} className='linkToUpdate'>
                         update
                     </Link>
+                    </Button>
+
                 </td>
             </tr>
         );

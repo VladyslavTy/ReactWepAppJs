@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import NavLink from "react-router-dom/es/NavLink";
+import {Button} from "react-bootstrap";
 
 class MyBookingsTable extends React.Component{
     constructor(){
@@ -19,20 +20,16 @@ class MyBookingsTable extends React.Component{
     }
 
     bookingRowDel(booking){
-
+        this.remove(booking);
         axios.delete('http://localhost:4000/bookings' + '/' + booking._id);
 
     }
 
-    remove(key) {
-        let fdata = this.state.data;
-        fdata.find(function (key) {
-            
-        })
-        delete fdata.id(key);
-        this.setState({fdata});
+    remove = (element) => {
+        let fdata = this.state.data.filter(e => e !== element);
+        this.state.data = fdata;
+        this.setState(this.state.data);
     };
-
 
     render(){
         let rows = this.state.data.map(booking => {
@@ -91,10 +88,10 @@ const BookingRow = (props) =>{
                     {props.data.finishbooking}
                 </td>
                 <td>
-                    <button type="button" className="btn" id="deleteBooking"
+                    <Button bsStyle="danger" className="deleteButton"
                             onClick={onDelEvent.bind(this)} >
                         Delete
-                    </button>
+                    </Button>
                 </td>
             </tr>
         );
